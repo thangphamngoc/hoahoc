@@ -1,0 +1,45 @@
+.dialog-backdrop {
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.daboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  .item {
+    background-color: #6d7fcc;
+    border-radius: 5px;
+    border: 2px;
+    padding: 10px 10px;
+  }
+}
+.text-color{
+  p{
+    color: #fff;
+    font-weight: bold;
+  }
+}
+.app-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px
+}
+
+@media (max-width: 992px) {
+  .item {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-date {
+    padding: 0;
+  }
+}

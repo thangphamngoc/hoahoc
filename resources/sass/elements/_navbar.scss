@@ -1,0 +1,180 @@
+.navbar {
+  font-weight: 600;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  .menuToggle {
+    font-size: 15px;
+  }
+}
+
+.nav-item {
+  .dropdown-menu {
+    border: none;
+    margin-top: .5rem;
+    border-top: 1px solid #f2f2f2 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.nav-link {
+  .svg-inline--fa {
+    font-size: 1.4rem;
+  }
+}
+
+.profile-photo {
+  width: 2rem;
+  height: 2rem;
+  margin: -.375rem 0;
+}
+
+.wrapperMobile {
+  display: flex;
+  z-index: 1;
+  align-items: stretch;
+  position: absolute;
+}
+
+
+#sidebar.active {
+  margin-left: -100%;
+}
+
+#sidebar.show {
+  transition: margin-left 4s;
+  margin-left: -100%;
+}
+
+#sidebar.hide {
+  transition: 2s;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #333;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+ul ul a {
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+@media (max-width: 1198px) {
+
+  //     .wrapperMobile{
+  //         display: none;
+  //     }
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar.active {
+    margin-left: -100%;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 1198px) {
+
+  .wrapperMobile {
+    display: none;
+  }
+
+  // .wrapper{
+  //     display: none;
+  // }
+}
+
+@media (max-width: 992px) {
+
+
+  .change-vi {
+    display: none;
+  }
+
+  .menuToggle {
+    right: 15px;
+    position: absolute;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .user-left {
+    display: none;
+  }
+
+  #sidebar {
+    min-width: 190px;
+    max-width: 190px;
+  }
+}
